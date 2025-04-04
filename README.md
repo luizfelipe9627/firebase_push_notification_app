@@ -12,8 +12,8 @@ O **Firebase Customer Front** é um aplicativo móvel desenvolvido em **Flutter*
 ## Configuração do Projeto
 ### 1. Clonar o Repositório
 ```sh
-git clone https://github.com/seu-usuario/firebase_customer_front.git
-cd firebase_customer_front
+git clone https://github.com/luizfelipe9627/firebase_push_notification_app.git
+cd firebase_push_notification_app
 ```
 
 ### 2. Instalar Dependências
