@@ -1,7 +1,9 @@
-# Firebase Customer Front
+# Firebase Push Notification App
 
 ## Sobre o Projeto
-O **Firebase Customer Front** é um aplicativo móvel desenvolvido em **Flutter** com **Dart** que implementa notificações push utilizando **Firebase Cloud Messaging (FCM)**. O objetivo do app é permitir o envio e recebimento de mensagens em tempo real para dispositivos cadastrados.
+O **Firebase Push Notification App** é um aplicativo móvel desenvolvido em **Flutter** com **Dart** que implementa notificações push utilizando **Firebase Cloud Messaging (FCM)**. 
+
+O objetivo do app é permitir o envio e recebimento de mensagens em tempo real para dispositivos cadastrados.
 
 ## Tecnologias Utilizadas
 - **Flutter** (Dart)
