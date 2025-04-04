@@ -100,5 +100,11 @@ curl -X POST "https://fcm.googleapis.com/fcm/send" \
 └── README.md                   # Documentação do projeto                
 ```
 
+## Licença
+
+Este projeto é de código aberto e está sob a licença MIT.
+
+---
+
 🚀 **Desenvolvido com Flutter e Firebase**
 
