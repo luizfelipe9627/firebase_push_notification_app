@@ -33,6 +33,48 @@ Para rodar no emulador ou dispositivo físico:
 flutter run
 ```
 
+### 5. Obtendo o Token do Dispositivo
+Após iniciar o aplicativo, você pode obter o token do dispositivo no console da sua IDE. Esse token é essencial para enviar notificações diretamente para o dispositivo específico.
+
+Caso queira armazená-lo no backend para futuras notificações, certifique-se de enviá-lo para o seu servidor assim que for gerado ou atualizado.
+
+### 6. Enviando Notificações
+Para enviar notificações, você pode utilizar:
+- **Firebase Console** (interface gráfica para testes manuais)
+- **Ferramentas de terceiros**, como Postman ou cURL, para envio via API
+- **Seu próprio backend** para automação de notificações através do Firebase Admin SDK
+
+O envio ocorre por meio de uma requisição **POST** para o endpoint do Firebase Cloud Messaging (FCM), incluindo o token do dispositivo e a mensagem desejada no corpo da requisição.
+
+#### Exemplo de requisição via cURL por token:
+```sh
+curl -X POST "https://fcm.googleapis.com/fcm/send" \
+     -H "Authorization: Bearer SEU_ACCESS_TOKEN" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "token": "TOKEN_DO_DISPOSITIVO",
+           "notification": {
+             "title": "Título da Notificação",
+             "body": "Conteúdo da mensagem"
+             "image": "URL da imagem"
+           }
+         }'
+```
+#### Exemplo de requisição via cURL por tópico:
+```sh
+curl -X POST "https://fcm.googleapis.com/fcm/send" \
+     -H "Authorization: Bearer SEU_ACCESS_TOKEN" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "topic": "NOME_DO_TOPICO",
+           "notification": {
+             "title": "Título da Notificação",
+             "body": "Conteúdo da mensagem"
+             "image": "URL da imagem"
+           }
+         }'
+```
+
 ## Funcionalidades
 - Solicita permissão para notificações ao iniciar o app.
 - Recebe e exibe mensagens push do Firebase.
