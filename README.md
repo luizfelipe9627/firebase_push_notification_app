@@ -106,5 +106,5 @@ Este projeto é de código aberto e está sob a licença MIT.
 
 ---
 
-🚀 **Desenvolvido com Flutter e Firebase**
+🔥 **Desenvolvido com Flutter e Dart** 🚀
 
